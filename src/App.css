@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root {
+  margin: 0 auto;
+  padding:0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+header a 
+{
+  text-decoration: none;
+}
+header a:hover 
+{
+  color: black;
+}
+.mobile__navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100%;
+  top:80px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: right;
+  transition: 1000ms ease-in-out;
+  z-index: 10;
+  margin-right: 10%;
+}
+.active 
+{
+  right: -10%;
+}
